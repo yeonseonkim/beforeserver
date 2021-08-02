@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>용기모아</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/second.css' %}"/>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+</head> 
+
+<body>
+    <header>
+   
+		<a href="{% url 'login' %}"><input id="logo" type="image" src="{% static 'img/logo.png' %}" alt="로고 이미지" width="100"></a>
+		<h1><a href="{% url 'login' %}" id="hd">용기모아</a></h1>
+	
+</header>
+<br>
+<nav>
+	<ul>
+		<li id="tab1"><a href="{% url 'first_intro' %}">소개</a></li>
+		<li id="tab2"><a href="{% url 'second_my' %}">마이페이지</a></li>
+		<li id="tab3"><a href="{% url 'third_pchange' %}">지역화폐로 전환</a></li>
+		<li id="tab4"><a href="{% url 'blog' %}">공지사항</a></li>
+
+	</ul>
+	
+</nav>
+<br> 
+
+<a href="{% url 'honeytip' %}"><input id="banner" type="image" src="{% static 'img/banner.png' %}" width="100"></a>
+
+    <section>
+    	<div>
+    		<h3>&nbsp;나의 프로필</h3>
+			<table class="simple_table">
+				<tbody>
+					  <tr>
+							<th class="row">이름</th>
+							<td class="title">{{korname}}</td>
+					  </tr>
+					  <tr>
+							<th class="row">아이디</th>
+							<td class="notice1">{{username}}</td>
+					  </tr>
+					  <tr>
+							<th class="row">참여횟수</th>
+							<td class="notice2">{{usenums}}</td>
+					  </tr>
+				</tbody>
+		  	</table>
+
+    	</div><br><br>
+
+    	<div>
+    	<h3>&nbsp;누적 포인트</h3>
+		<div id="totalshow">총 <strong>{{userpoint}}</strong> point</div>
+    	</div>
+		
+		<br><br>
+    	<div>
+    	<h3>&nbsp;사용내역</h3>
+
+		<table class="tt">
+			<thead>
+				<tr>
+					<th>적립매장</th>
+					<th>누적포인트</th>
+					<th>적립일자</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for all in historyall %}
+				<tr>
+					<td>{{all.s_id}}</td>
+					<td>{{all.nowpoint}}</td>
+					<td>{{all.h_date}}</td>
+				</tr>
+				{% endfor %}
+				
+			</tbody>
+		</table>
+
+
+    	</div>
+    
+    </section>
+
+    <footer>
+        Copyright © 용기모아 All Rights Reserved<br>
+        - 2021 졸업 프로젝트 김연선 최은녕 -
+    </footer>
+    
+</body>
+</html>

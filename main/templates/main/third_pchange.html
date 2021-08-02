@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>용기모아</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/third.css' %}">
+
+</head>
+
+<body>
+    <header>
+        <a href="{% url 'login' %}"><input id="logo" type="image" src="{% static 'img/logo.png' %}" alt="로고 이미지" width="100"></a>
+        <h1><a href="{% url 'login' %}" id="hd">용기모아</a></h1>
+    </header>
+	<br>
+    <nav>
+        <ul>
+            <li id="tab1"><a href="{% url 'first_intro' %}">소개</a></li>
+            <li id="tab2"><a href="{% url 'second_my' %}">마이페이지</a></li>
+            <li id="tab3"><a href="{% url 'third_pchange' %}">지역화폐로 전환</a></li>
+            <li id="tab4"><a href="{% url 'blog' %}">공지사항</a></li>
+        </ul>        
+    </nav>
+    <br><br>
+
+    <a href="{% url 'honeytip' %}"><input id="banner" type="image" src="{% static 'img/banner.png' %}" width="100"></a>
+
+    <section>
+    <table class=hhtt>
+        <thead>
+            <tr>
+                <th class="ftsty">현재 포인트</th>
+                <th> &#10140; </th>
+                <th class="ftsty">지역화폐</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="underbar">{{userpoint}}</td>
+                <td>
+                <form method="POST">
+                    {% csrf_token %}
+                    <input id='changebut' type="submit" value="Change">
+                </form>
+                </td>
+
+                <td class="underbar">{{userpoint}}</td>
+            </tr>
+        </tbody>
+
+
+    </table>
+    <br>
+
+    <h4>지역화폐 사용처</h4>
+    <!-- <table class="table table-striped"> -->
+    <table class="tt">
+        <thead>
+            <tr>
+                <th>점포명</th>
+                <th>전화번호</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for a,b in combined_list %}
+            <tr>
+                <td id="title">{{a}}</td>
+                <td id="notice">{{b}}</td>
+            </tr>
+            {% endfor %}
+            
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <a href="{% url 'buygifticon' %}"><button id='giftbut'>기프티콘 구매하러 가기</button></a>
+
+
+
+
+    </section>
+    <footer>
+        <br><br>
+        Copyright © 용기모아 All Rights Reserved<br>
+        - 2021 졸업 프로젝트 김연선 최은녕 -
+    </footer>
+</body>
+
+
+</html>

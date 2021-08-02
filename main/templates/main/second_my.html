@@ -1,0 +1,131 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>용기모아</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/second.css' %}"/>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+</head>
+
+<body>
+    <header>
+        <a href="{% url 'login' %}"><input id="logo" type="image" src="{% static 'img/logo.png' %}" alt="로고 이미지" width="100"></a>
+            <h1><a href="{% url 'login' %}" id="hd">용기모아</a></h1>
+    </header>
+	<br>
+    <nav>
+        <ul>
+            <li id="tab1"><a href="{% url 'first_intro' %}">소개</a></li>
+            <li id="tab2"><a href="{% url 'second_my' %}">마이페이지</a></li>
+            <li id="tab3"><a href="{% url 'third_pchange' %}">지역화폐로 전환</a></li>
+            <li id="tab4"><a href="{% url 'blog' %}">공지사항</a></li>
+        </ul>        
+    </nav>
+    <br>
+
+	<a href="{% url 'honeytip' %}"><input id="banner" type="image" src="{% static 'img/banner.png' %}" width="100"></a>
+
+    <section>
+    	<div>
+    		<h3>&nbsp;나의 프로필</h3>
+			<table class="simple_table">
+				<tbody>
+					<tr>
+						<th class="row">이름</th>
+						<td>{{korname}}</td>
+					</tr>
+					<tr>
+						<th class="row">아이디</th>
+						<td>{{username}}</td>
+					</tr>
+					<tr>
+						<th class="row">전화번호</th>
+						<td>{{phonenum}}</td>
+				  	</tr>
+					  <!-- <tr>
+							<th class="row">참여횟수</th>
+							<td>{{usenums}}</td>
+					  </tr> -->
+				</tbody>
+		  	</table>
+
+
+
+    	</div><br><br>
+
+	{% if auth == 'user' %}
+
+
+
+		<h3>&nbsp;참여횟수 이벤트</h3>
+		<p>&nbsp;: 캠페인에 10회 참여시 보상 교환권 획득!</p>
+
+		{% if usenums == 0 %}
+
+		<input type="image" src="{% static 'img/0.jpg' %}">
+
+		{% elif usenums == 1 %}
+
+		<input type="image" src="{% static 'img/1.jpg' %}">
+
+		{% elif usenums == 2 %}
+
+		<input type="image" src="{% static 'img/2.jpg' %}">
+
+		{% elif usenums == 3 %}
+
+		<input type="image" src="{% static 'img/3.jpg' %}">
+
+		{% elif usenums == 4 %}
+
+		<input type="image" src="{% static 'img/4.jpg' %}">
+
+		{% elif usenums == 5 %}
+
+		<input type="image" src="{% static 'img/5.jpg' %}">
+
+		{% elif usenums == 6 %}
+
+		<input type="image" src="{% static 'img/6.jpg' %}">
+
+		{% elif usenums == 7 %}
+
+		<input type="image" src="{% static 'img/7.jpg' %}">
+
+		{% elif usenums == 8 %}
+
+		<input type="image" src="{% static 'img/8.jpg' %}">
+
+		{% elif usenums == 9 %}
+
+		<input type="image" src="{% static 'img/9.jpg' %}">
+
+		{% else %}
+
+		<input type="image" src="{% static 'img/10.jpg' %}"><br>
+			{% if forevent == 0 %}
+			<a href="{% url 'gift' %}"><button id="gogift">보상교환 하러가기!</button></a>
+			{% else %}
+			<p>이미 보상을 교환하였습니다</p>
+			{% endif %}
+
+		{% endif %}
+		<br><br>
+	
+
+	{% else %}
+
+	{% endif %}
+    
+    </section>
+
+    <footer>
+		<br><br>
+        Copyright © 용기모아 All Rights Reserved<br>
+        - 2021 졸업 프로젝트 김연선 최은녕 -
+    </footer>
+    
+</body>
+</html>

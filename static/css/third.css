@@ -1,0 +1,46 @@
+h1{text-align:center; color:#569A49;}
+#hd:link{text-decoration:none;color:#569A49; letter-spacing:2px }
+#hd:visited{text-decoration:none;color:#569A49; letter-spacing:2px}
+#hd:hover{text-decoration:none; color:#569A49; letter-spacing:2px}
+#hd:active{text-decoration:none; color:#569A49; letter-spacing:2px}
+
+#logo {padding: 10px; position: absolute; top: 2%; left: 30%; overflow: hidden}
+#content{width: 200px; float: right; padding: 0px;}
+
+li {float: left;}
+nav {position: absolute; top:20%; left: 25%;}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li a {
+    display: block;
+    color: #000000;
+    padding: 8px;
+    margin: 20;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+li a.current{
+    background-color: #145A32;
+    color: white;
+}
+
+li a:hover:not(.current) {
+    background-color: #145A32;
+    color: white;
+}
+
+section {position:absolute; top:35%; left: 25%; right:25%;}
+
+
+table {width:100%;}
+
+.ftsty{font-weight:bold; background-color:#FFF3CD}
+tr{text-align:center;}
+

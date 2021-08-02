@@ -1,0 +1,62 @@
+h1{text-align:center; color:#569A49; margin-top:50px; letter-spacing:2px; position:relative}
+
+#lihd{text-align:center;}
+
+#hd:link{text-decoration:none;color:#569A49; letter-spacing:2px }
+#hd:visited{text-decoration:none;color:#569A49; letter-spacing:2px}
+#hd:hover{text-decoration:none; color:#569A49; letter-spacing:2px}
+#hd:active{text-decoration:none; color:#569A49; letter-spacing:2px}
+
+#logo{margin-left:35%; position:absolute;margin-top:-25px;}
+#loginlogo{display:block; margin: 50px auto; }
+
+
+
+#logbox{text-align:center;}
+#hr{text-decoration:none; font-weight:bold; color:#003300;}
+#hhr{text-align:center; line-height:30px;}
+
+
+
+
+ul{width:90%; height:30px; list-style:none; padding-top:20px; position:relative;}
+#tab1{margin-left:25%}
+#tab1:hover{text-decoration: underline overline; text-decoration-color: #003300; text-underline-position: under;}
+#tab2:hover{text-decoration: underline overline; text-decoration-color: #003300;text-underline-position: under;}
+#tab3:hover{text-decoration: underline overline; text-decoration-color: #003300;text-underline-position: under;}
+#tab4:hover{text-decoration: underline overline; text-decoration-color: #003300;text-underline-position: under;}
+ul li{float:left; margin-left:3%; margin-right: 3%;}
+
+ul li a{font-size:20px; font-weight:bold; text-decoration:none; color:#003300}
+
+table{height:200px; width:90%;}
+
+#main_login{float:left; width:33%; height:350px; color:rgb(0, 0, 0); text-align:center; background-color:#ecf7b0; border-width:0.5px;}
+#main_qr{float:left; width:33%; height:350px; color:black; text-align:left; background-color:#e7eca0;  }
+#main_point{float:left; width:33%; height:350px; color:black; text-align:left; background-color:#ccecba;  }
+
+#loginid{text-decoration:none; color:black; font-size:20px; font-weight:bold; line-height:35px;}
+#lout{text-decoration:none; font-weight:bold; color:#003300;}
+#lout:hover{text-decoration:none; color:#006600;}
+#userbut{text-decoration:none; font-size:60px; font-weight:bold; color:black; margin-left:30px;}
+#storebut{text-decoration:none; font-size:60px; font-weight:bold; color:black; margin-left:30px;}
+#arrow{text-decoration:none; font-size:30px; font-weight:bold; color:black; margin-left:30px;}
+
+#pointchange_button{float:right; margin-top:20px; margin-right:40px; font-size:20px;}
+#goto_detail{font-size: 15px;}
+
+footer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 20px;
+    /*position: fixed;*/
+    text-align: center;
+    width:100%;
+    bottom: 0;
+    font-size: 12px;
+    color: #5F6A6A;
+}
+
+
+#but {border:0; outline:0; background-color:#ccff99; border-radius: 0.35em; padding: 0.75em 2.5em 0.75em 2.5em;text-decoration:none; color:#264d00; font-weight:bold;}

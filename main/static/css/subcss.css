@@ -1,0 +1,37 @@
+#nono {text-align: center;}
+a:link { color:#1E8449; text-decoration: underline wavy; font-size:17px; background-color: white;}
+a:visited { color:#1E8449; text-decoration: underline wavy; font-size:17px; background-color: white;}
+
+#storecss {text-align: center;}
+#press1 {width: 220px; font-size: 15px; text-align: center;}
+#press2 {width: 100px; height:35px; background-color: #569A49; border: 1px solid 569A49; border-radius: 10px;}
+
+#okcss {text-align: center;}
+#nokcss {text-align: center;}
+
+footer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 20px;
+    /*position: fixed;*/
+    text-align: center;
+    width:100%;
+    bottom: 0;
+    font-size: 12px;
+    color: #5F6A6A;
+}
+
+#buygtcss {text-align: center;}
+#nopcss {text-align: center;}
+.butcolor {border:0; outline:0; background-color: white;}
+.butcolor:hover {background-color: rgb(200, 240, 176);}
+
+#sendgcss {text-align: center;}
+
+#intozerocss {text-align: center;}
+
+#banner{
+    position:fixed;
+    margin-left:75%;    
+}

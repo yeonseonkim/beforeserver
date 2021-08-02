@@ -1,0 +1,110 @@
+
+{% load static %}
+
+
+{% if user.is_authenticated %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>용기모아</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login_extern.css' %}"/>
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}"> -->
+</head>
+
+<body>
+    <header>
+        <!-- <h1><a href="{% url 'login' %}" id="hd">용기모아</a></h1> -->
+        <a href="{% url 'login' %}"><input id="logo" type="image" src="{% static 'img/logo.png' %}" alt="로고 이미지" width="100"></a>
+        <h1><a href="{% url 'login' %}" id="hd">용기모아</a></h1>
+        
+    </header>
+    <br>
+    <div>
+    <nav>
+        <ul>          
+
+            <li id="tab1"><a href="{% url 'first_intro' %}">소개</a></li>
+            <li id="tab2"><a href="{% url 'second_my' %}">마이페이지</a></li>
+            <li id="tab3"><a href="{% url 'third_pchange' %}">지역화폐로 전환</a></li>
+            <li id="tab4"><a href="{% url 'blog' %}">공지사항</a></li>
+
+        </ul>
+        
+    </nav>
+    </div>
+    
+    <section>
+        <div id="center">
+    
+        <div id="main_login">
+            <br><br><br><br>
+            <p id="loginid">{{ user }}님<br>환영합니다.</p><br>
+            
+            <a href="{% url 'logout' %}" id="lout">로그아웃</a>
+
+        </div>
+    
+        <div id="main_qr">
+            
+            <br><br><br>
+            
+            <a href="{% url 'userpage' %}" id="userbut">고객 측<br></a>
+            <a href="{% url 'userpage' %}" id="userbut">마이페이지<p id="arrow">>>></p></a>
+            
+    
+    
+        </div>
+    
+        <div id="main_point">
+
+            <br><br><br>
+
+            <a href="{% url 'storepass' %}" id="storebut">매장 측<br><a>
+            <a href="{% url 'storepass' %}" id="storebut">적립페이지<p id="arrow">>>></p></a>
+    
+        </div>
+        <div>
+        <br>
+    
+    </section>
+
+    <footer>
+        <br><br>
+        Copyright © 용기모아 All Rights Reserved<br>
+        - 2021 졸업 프로젝트 김연선 최은녕 -
+    </footer>
+
+
+    
+</body>
+
+</html>
+
+
+
+{% else %}
+
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/login_extern.css' %}"/>
+
+
+<div>
+    
+    <input type="image" src="{% static 'img/logo.png' %}" alt="로고 이미지" width="100" id="loginlogo">
+    <h1 id="lihd"><a href="{% url 'login' %}" id="hd">용기모아</a></h1><br>
+</div>
+
+<form action="" method="POST" id="logbox">
+    {% csrf_token %}
+    ID : <input name="username" type="text"><br><br>
+    PW : <input name="password" type="password"><br><br><br>
+    <input id="but" type="submit" value="LOGIN">
+    
+
+</form>
+<p id="hhr"><a href="{% url 'signup' %}" id="hr">회원가입</a><br>
+
+
+{% endif %}

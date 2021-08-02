@@ -1,0 +1,92 @@
+h1{text-align:center; color:#569A49;margin-top:50px; letter-spacing:2px; position:relative}
+#hd:link{text-decoration:none;color:#569A49; letter-spacing:2px }
+#hd:visited{text-decoration:none;color:#569A49; letter-spacing:2px}
+#hd:hover{text-decoration:none; color:#569A49; letter-spacing:2px}
+#hd:active{text-decoration:none; color:#569A49; letter-spacing:2px}
+
+#logo{margin-left:35%; position:absolute; margin-top:-25px;}
+
+ul{width:90%; height:30px; list-style:none; padding-top:20px; position:relative;}
+#tab1{margin-left:25%}
+#tab1:hover{text-decoration: underline overline; text-decoration-color: #003300;text-underline-position: under;}
+#tab2:hover{text-decoration: underline overline; text-decoration-color: #003300;text-underline-position: under;}
+#tab3:hover{text-decoration: underline overline; text-decoration-color: #003300;text-underline-position: under;}
+#tab4:hover{text-decoration: underline overline; text-decoration-color: #003300;text-underline-position: under;}
+ul li{float:left; margin-left:3%; margin-right: 3%;}
+
+ul li a{font-size:20px; font-weight:bold; text-decoration:none; color:#003300}
+
+section {position: relative; margin-left:25%; margin-right:25%;}
+
+.hhtt {
+    float: center;
+    border-collapse: collapse;
+    font-size: 15px;
+    text-align: center;
+    width: 65%;
+}
+
+.hhtt th, .hhtt td {
+    padding: 10px;
+  }
+
+.underbar {border-bottom: 1px solid #F8C471 ;}
+
+/* table {width:100%;} */
+.tt {
+    float: center;
+    border-collapse: collapse;
+    border-top: 3px solid #EB984E;
+    font-size: 15px;
+    width: 80%;
+  }  
+.tt th {
+    color: #AF601A;
+    background: #FDEBD0;
+    text-align: center;
+  }
+.tt th, .tt td {
+    padding: 5px;
+    border: 1px solid #F8C471;
+  }
+.tt th:first-child, .tt td:first-child {
+    border-left: 0;
+  }
+.tt th:last-child, .tt td:last-child {
+    border-right: 0;
+  }
+.tt tr td:first-child{
+    text-align: center;
+  }
+.tt caption{caption-side: bottom; display: none;}
+
+#title {width: 30%; text-align: center;}
+#notice {width: 70%; text-align: center;}
+
+
+.ftsty{font-weight:bold; background-color:#FFF3CD}
+
+/* tr{text-align:center;} */
+
+footer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 20px;
+  /*position: fixed;*/
+  text-align: center;
+  width:90%;
+  bottom: 0;
+  font-size: 12px;
+  color: #5F6A6A;
+}
+
+#changebut {font-weight:bold; width: 100px; height:35px; background-color: #f9e295; border-radius: 8px; color:#1b1a04 ; font-size: 14px; border:0; outline:0;}
+#changebut:hover{box-shadow:2px 2px 2px #a79a90}
+#giftbut {font-weight:bold; width: 210px; height:33px; background-color: #f6a565; border: 1px solid #FFA07A; border-radius: 5px; color: white; font-size: 15px;}
+#giftbut:hover{box-shadow:1px 1px 1px 1px #a79a90}
+
+#banner{
+  position:fixed;
+  margin-left:75%;    
+}

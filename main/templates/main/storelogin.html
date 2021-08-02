@@ -1,0 +1,24 @@
+{% load static %}
+{% if user.is_authenticated %}
+{{user}}님 환영합니다.
+
+<br>
+
+{% else %}
+
+<h1>용기모아</h1>
+<p>storelogin</p>
+<br>
+<form action="" method="POST">
+    {% csrf_token %}
+    <input name="username" type="text"><br>
+    <input name="password" type="password"><br>
+    <input type="submit" value="로그인">
+    
+
+</form>
+<a href="{% url 'signup' %}">회원가입</a><br>
+
+{% endif %}
+
+</body>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>용기모아</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/tipcss.css' %}"/>
+
+</head>
+
+<body>
+    <header>
+        <a href="{% url 'login' %}"><input id="logo" type="image" src="{% static 'img/logo.png' %}" alt="로고 이미지" width="100"></a>
+        <h1><a href="{% url 'login' %}" id="hd">용기모아</a></h1>
+        
+    </header>
+    <br>
+    <nav>
+        <ul>
+            <li id="tab1"><a href="{% url 'first_intro' %}">소개</a></li>
+            <li id="tab2"><a href="{% url 'second_my' %}">마이페이지</a></li>
+            <li id="tab3"><a href="{% url 'third_pchange' %}">지역화폐로 전환</a></li>
+            <li id="tab4"><a href="{% url 'blog' %}">공지사항</a></li>
+
+        </ul>
+        
+    </nav>
+    <br>
+    <section>
+    	<div>
+    	<h3><span id='h3span'>&nbsp;용기모아의 용기 추천&nbsp;</span></h3>
+        <h4><span class='h4span'>&nbsp;for 음식&nbsp;</span></h4>
+        <table class="simple_table">
+            <tbody>
+                <tr>
+                    <th class="row">치킨</th>
+                    <td>
+                    교촌: 733g <br>
+                    BBQ: 782g <br>
+                    굽네: 588g <br>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="row">떡볶이</th>
+                    <td>
+                    엽기떡볶이: 1800g <br>
+                    신전떡볶이: 200g <br>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="row">중식</th>
+                    <td>
+                    짜장면(1인분): 450g <br>
+                    짬뽕(1인분): 630g <br>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <p></p>
+
+
+        <table border="0">
+            <tbody>
+                <tr>
+                    <th class="row"><input  type="image" src="{% static 'img/rnr01.jpg' %}" alt="락앤락01" width="150px"></th>
+                    <td>
+                    <strong>[락앤락] 비스프리 레인보우 모듈러<br></strong>
+                    <div class="oneline">&nbsp;</div>
+                    &nbsp;-장점: BPA free <br>
+                    &nbsp;-용량: 260ml / 450ml / 910ml / 1.5L<br>
+                    &nbsp;<a href="https://brand.naver.com/locknlock/products/5083570664">&gt;&gt;구매하러 가기</a><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="row"><input  type="image" src="{% static 'img/rnr02.jpg' %}" alt="락앤락02" width="150px"></th>
+                    <td>
+                    <strong>[락앤락] 오븐도 OK 내열유리 밀폐용기<br></strong>
+                    <div class="oneline">&nbsp;</div>
+                    &nbsp;-장점: 조리 후 바로 보관 가능, 전자레인지/오픈 전용 용기<br>
+                    &nbsp;-용량: 380ml / 630 ml / 1L / 2L<br>
+                    &nbsp;<a href="https://brand.naver.com/locknlock/products/4785466596">&gt;&gt;구매하러 가기</a><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="row"><input  type="image" src="{% static 'img/rnr03.jpg' %}" alt="락앤락03" width="150px"></th>
+                    <td>
+                    <strong>[락앤락] 뚜껑까지 투명한 유리밀폐<br></strong>
+                    <div class="oneline">&nbsp;</div>
+                    &nbsp;-장점: BPA free 트라이탄 소재, 내열유리<br>
+                    &nbsp;-용량: 370ml / 640ml / 1.05L / 1.52L<br>
+                    &nbsp;<a href="https://brand.naver.com/locknlock/products/4785466596">&gt;&gt;구매하러 가기</a><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="row"><input  type="image" src="{% static 'img/dis01.jpg' %}" alt="다이소01" width="150px"></th>
+                    <td>
+                    <strong>[다이소] 전자렌지 보관용기 2개입<br></strong>
+                    <div class="oneline">&nbsp;</div>
+                    &nbsp;-장점: 냉동, 전자레인지 가능<br>
+                    &nbsp;-용량: 450ml<br>
+                    &nbsp;<a href="https://www.daisomall.co.kr/shop/goods_view.php?id=0003624415">&gt;&gt;구매하러 가기</a><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="row"><input  type="image" src="{% static 'img/dis02.jpg' %}" alt="다이소02" width="150px"></th>
+                    <td>
+                    <strong>[다이소] 글라스락 직사각<br></strong>
+                    <div class="oneline">&nbsp;</div>
+                    &nbsp;-장점: 냉동, 전자레인지 가능<br>
+                    &nbsp;-용량: 950ml<br>
+                    &nbsp;<a href="https://www.daisomall.co.kr/shop/goods_view.php?id=0000079358">&gt;&gt;구매하러 가기</a><br>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        
+
+        <h4><span class='h4span'>&nbsp;for 음료&nbsp;</span></h4>
+        <table class="simple_table">
+            <tbody>
+                <tr>
+                    <th class="row">스타벅스</th>
+                    <td>
+                    short: 237ml <br>
+                    tall: 355ml <br>
+                    grande: 473ml <br>
+                    venti: 591ml <br>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="row">투썸 플레이스</th>
+                    <td>
+                    regular: 355ml <br>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="row">할리스 커피</th>
+                    <td>
+                    regular: 354ml <br>
+                    grande: 472ml <br>
+                    venti: 591ml <br>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="row">이디야 커피</th>
+                    <td>
+                    regular: 384ml <br>
+                    extra: 651ml <br>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <p></p>
+
+        <table border="0">
+            <tbody>
+                <tr>
+                    <th class="row"><input  type="image" src="{% static 'img/rnr11.jpg' %}" alt="락앤락01" width="150px"></th>
+                    <td>
+                    <strong>[락앤락] 스윙 텀블러 (LHC4138)<br></strong>
+                    <div class="oneline">&nbsp;</div>
+                    &nbsp;-장점: 우수한 보냉/보온 <br>
+                    &nbsp;-용량: 880ml<br>
+                    &nbsp;<a href="https://brand.naver.com/locknlock/products/4696943226">&gt;&gt;구매하러 가기</a><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="row"><input  type="image" src="{% static 'img/rnr12.jpg' %}" alt="락앤락02" width="150px"></th>
+                    <td>
+                    <strong>[락앤락] 메트로 텀블러 시리즈 (밀폐형, 머그형, 투웨이)<br></strong>
+                    <div class="oneline">&nbsp;</div>
+                    &nbsp;-장점: 우수한 보냉/보온<br>
+                    &nbsp;-용량: 470ml / 710ml<br>
+                    &nbsp;<a href="https://brand.naver.com/locknlock/products/4858575641">&gt;&gt;구매하러 가기</a><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="row"><input  type="image" src="{% static 'img/rnr13.jpg' %}" alt="락앤락03" width="150px"></th>
+                    <td>
+                    <strong>[락앤락] NEW 클립 텀블러 540ml <br></strong>
+                    <div class="oneline">&nbsp;</div>
+                    &nbsp;-장점: 우수한 보냉/보온, 세련된 컬러<br>
+                    &nbsp;-용량: 540ml<br>
+                    &nbsp;<a href="https://brand.naver.com/locknlock/products/5605390186">&gt;&gt;구매하러 가기</a><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="row"><input  type="image" src="{% static 'img/tms01.jpg' %}" alt="써모스1" width="150px"></th>
+                    <td>
+                    <strong>[써모스] 데일리 원터치 텀블러<br></strong>
+                    <div class="oneline">&nbsp;</div>
+                    &nbsp;-장점: 보온/보냉, 초경량, 원터치<br>
+                    &nbsp;-용량: 350ml / 500ml / 600ml / 750ml <br>
+                    &nbsp;<a href="https://thermosshop.kr/product/%EB%8D%B0%EC%9D%BC%EB%A6%AC-%EC%9B%90%ED%84%B0%EC%B9%98-%ED%85%80%EB%B8%94%EB%9F%AC-600ml/650/category/25/display/1/">&gt;&gt;구매하러 가기</a><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="row"><input  type="image" src="{% static 'img/tms02.jpg' %}" alt="써모스2" width="150px"></th>
+                    <td>
+                    <strong>[써모스] 퀵오픈 스트레이트 텀블러<br></strong>
+                    <div class="oneline">&nbsp;</div>
+                    &nbsp;-장점: 보온/보냉, 초경량<br>
+                    &nbsp;-용량: 250ml / 350ml / 500ml<br>
+                    &nbsp;<a href="https://thermosshop.kr/product/%ED%80%B5%EC%98%A4%ED%94%88-%EC%8A%A4%ED%8A%B8%EB%A0%88%EC%9D%B4%ED%8A%B8-%ED%85%80%EB%B8%94%EB%9F%AC-350ml/718/category/25/display/1/">&gt;&gt;구매하러 가기</a><br>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    	</div><br>
+
+
+    </section>
+
+    <footer>
+        <br><br>
+        Copyright © 용기모아 All Rights Reserved<br>
+        - 2021 졸업 프로젝트 김연선 최은녕 -
+    </footer>
+    
+</body>
+</html>

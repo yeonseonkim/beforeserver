@@ -1,0 +1,32 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>용기모아</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/signup.css' %}"/>
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}"> -->
+</head>
+
+<body>
+<br>
+<div id="tle">
+    <h2>용기모아 회원가입</h2><br>
+<form action="" method="POST">
+    {% csrf_token %}
+    당신은? <select name="auth" >
+        <option value="user">일반 사용자</option>
+        <option value="store">매장측</option>
+    </select><br>
+    이름: <input name="korname" type="text" id="unline"><br>
+    아이디: <input name="username" type="text" id="unline"><br>
+    비밀번호: <input name="password" type="password" id="unline"><br>
+    휴대전화: <input name="phonenum" type="text" id="unline"><br>
+    이메일: <input name="email" type="text" id="unline"><br><br>
+    <span id="butt"><input id="but" type="submit" value="회원가입"></span></div>
+</form>
+
+
+</body>

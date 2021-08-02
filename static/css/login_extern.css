@@ -1,0 +1,41 @@
+        h1{text-align:center; color:#569A49; margin-top:30px; letter-spacing:2px}
+        #lihd{text-align:center;}
+
+        #hd:link{text-decoration:none;color:#569A49; letter-spacing:2px }
+        #hd:visited{text-decoration:none;color:#569A49; letter-spacing:2px}
+        #hd:hover{text-decoration:none; color:#569A49; letter-spacing:2px}
+        #hd:active{text-decoration:none; color:#569A49; letter-spacing:2px}
+        
+
+        #logo{float:inline-start;margin-top:30px;}
+
+        
+
+        #logbox{text-align:center;}
+        #hr{text-decoration:none; font-weight:bold; color:#003300;}
+        #hhr{text-align:center; line-height:30px;}
+       
+
+
+
+
+
+        ul{width:90%; height:30px; list-style:none; padding-top:20px}
+        ul li{float:left; margin-left:3%; margin-right: 3%;}
+        ul li a{font-size:20px; font-weight:bold; text-decoration:none}
+
+        table{height:200px; width:90%;}
+
+        #main_login{float:left; width:33%; height:350px; color:rgb(0, 0, 0); text-align:center; background-color:#ecf7b0; border-width:0.5px;}
+        #main_qr{float:left; width:33%; height:350px; color:black; text-align:left; background-color:#e7eca0;  }
+        #main_point{float:left; width:33%; height:350px; color:black; text-align:left; background-color:#ccecba;  }
+
+        #loginid{text-decoration:none; color:black; font-size:20px; font-weight:bold; line-height:35px;}
+        #lout{text-decoration:none; font-weight:bold; color:#003300;}
+        #lout:hover{text-decoration:none; color:#006600;}
+        #userbut{text-decoration:none; font-size:60px; font-weight:bold; color:black; margin-left:30px;}
+        #storebut{text-decoration:none; font-size:60px; font-weight:bold; color:black; margin-left:30px;}
+        #arrow{text-decoration:none; font-size:30px; font-weight:bold; color:black; margin-left:30px;}
+
+        #pointchange_button{float:right; margin-top:20px; margin-right:40px; font-size:20px;}
+        #goto_detail{font-size: 15px;}

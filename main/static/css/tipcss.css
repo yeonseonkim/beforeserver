@@ -1,0 +1,50 @@
+h1{text-align:center; color:#569A49; margin-top:50px; letter-spacing:2px; position:relative}
+#hd:link{text-decoration:none;color:#569A49; letter-spacing:2px }
+#hd:visited{text-decoration:none;color:#569A49; letter-spacing:2px}
+#hd:hover{text-decoration:none; color:#569A49; letter-spacing:2px}
+#hd:active{text-decoration:none; color:#569A49; letter-spacing:2px}
+
+
+#logo{margin-left:35%; position:absolute; margin-top:-25px;}
+/* #logo {padding: 10px; position: absolute; top: 2%; left: 30%; overflow: hidden} */
+/* #content{width: 200px; float: right; padding: 0px;} */
+
+ul{width:90%; height:30px; list-style:none; padding-top:20px; position:relative;}
+#tab1{margin-left:25%}
+#tab1:hover{text-decoration: underline overline; text-decoration-color: #003300;text-underline-position: under;}
+#tab2:hover{text-decoration: underline overline; text-decoration-color: #003300;text-underline-position: under;}
+#tab3:hover{text-decoration: underline overline; text-decoration-color: #003300;text-underline-position: under;}
+#tab4:hover{text-decoration: underline overline; text-decoration-color: #003300;text-underline-position: under;}
+ul li{float:left; margin-left:3%; margin-right: 3%;}
+
+ul li a{font-size:20px; font-weight:bold; text-decoration:none; color:#003300}
+
+#h3span {background-color: #dde1b7; border-radius: 2px; padding: 3px;}
+.h4span {background-color: #eef0db; border-radius: 5px; padding: 3px;}
+
+.simple_table { width: 300px; border: none; border-collapse: separate; border-spacing: 2px;}
+.simple_table th { padding: 5px; width: 40%; border: none; border-left: 3px solid #E8D9C5; border-bottom: 1px solid #F7EEDF; background: #F7F5EB; font-weight: bold; text-align:center; text-shadow: 0 1px #FFF; vertical-align: middle;}
+.simple_table td { padding: 10px; border: none; font-size:13px; border-bottom: 1px solid #F7EEDF; text-align: left; vertical-align: baseline;}
+
+
+section {position: relative; margin-left:25%; margin-right:25%;}
+
+th {width: 20%;}
+strong {font-size: 16px;}
+td {font-size:13px; width: 80%; padding: 10px;}
+.oneline {font-size: 2px;}
+
+
+/* footer{ font-size: 12px; left: 0px; align-content: center; justify-content: center; text-align: center; bottom:0px; height:50px; width:100%; background: white; color: #5F6A6A; } */
+footer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 20px;
+    /*position: fixed;*/
+    text-align: center;
+    width:90%;
+    bottom: 0;
+    font-size: 12px;
+    color: #5F6A6A;
+}

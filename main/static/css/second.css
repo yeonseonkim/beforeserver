@@ -1,0 +1,113 @@
+h1{text-align:center; color:#569A49;margin-top:50px; letter-spacing:2px; position:relative}
+#hd:link{text-decoration:none;color:#569A49; letter-spacing:2px }
+#hd:visited{text-decoration:none;color:#569A49; letter-spacing:2px}
+#hd:hover{text-decoration:none; color:#569A49; letter-spacing:2px}
+#hd:active{text-decoration:none; color:#569A49; letter-spacing:2px}
+
+#logo{margin-left:35%; position:absolute; margin-top:-25px;}
+/* #logo {padding: 10px; position: absolute; top: 2%; left: 30%; overflow: hidden}
+#content{width: 200px; float: right; padding: 0px;} */
+
+ul{width:90%; height:30px; list-style:none; padding-top:20px; position:relative;}
+#tab1{margin-left:25%}
+#tab1:hover{text-decoration: underline overline; text-decoration-color: #003300;text-underline-position: under;}
+#tab2:hover{text-decoration: underline overline; text-decoration-color: #003300;text-underline-position: under;}
+#tab3:hover{text-decoration: underline overline; text-decoration-color: #003300;text-underline-position: under;}
+#tab4:hover{text-decoration: underline overline; text-decoration-color: #003300;text-underline-position: under;}
+ul li{float:left; margin-left:3%; margin-right: 3%;}
+
+ul li a{font-size:20px; font-weight:bold; text-decoration:none; color:#003300}
+
+/* li {float: left;}
+nav {position: absolute; top:20%; left: 25%;}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li a {
+    display: block;
+    color: #000000;
+    padding: 8px;
+    margin: 20;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+li a.current{
+    background-color: #145A32;
+    color: white;
+}
+
+li a:hover:not(.current) {
+    background-color: #145A32;
+    color: white;
+} */
+
+section {position: relative; margin-left:25%; margin-right:25%;}
+
+h3 {
+    width: 400px;
+    /* background-color: #E9F7EF; */
+}
+
+.simple_table { width: 300px; border: none; border-collapse: separate; border-spacing: 2px;}
+.simple_table th { padding: 10px; width: 100px; border: none; border-left: 5px solid #FFD966; border-bottom: 1px solid #FFF3CD; background: #FFF9E5; font-weight: normal; text-align:center; text-shadow: 0 1px #FFF; vertical-align: middle;}
+.simple_table td { padding: 10px; border: none; border-bottom: 1px solid #FFF3CD; text-align: left; vertical-align: baseline;}
+
+#totalshow { color: #F2C439; font-size: 30px;}
+strong {color: #FB870D; }
+
+.tt {
+    float: center;
+    border-collapse: collapse;
+    border-top: 3px solid #EB984E;
+    font-size: 15px;
+    width: 95%;
+  }  
+.tt th {
+    color: #AF601A;
+    background: #FDEBD0;
+    text-align: center;
+  }
+.tt th, .tt td {
+    padding: 5px;
+    border: 1px solid #F8C471;
+  }
+.tt th:first-child, .tt td:first-child {
+    border-left: 0;
+  }
+.tt th:last-child, .tt td:last-child {
+    border-right: 0;
+  }
+.tt tr td:first-child{
+    text-align: center;
+  }
+.tt caption{caption-side: bottom; display: none;}
+
+#title {width: 20%; text-align: center;}
+#notice1 {width: 20%; text-align: center;}
+#notice2 {width: 60%; text-align: center;}
+
+footer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 20px;
+  /*position: fixed;*/
+  text-align: center;
+  width:90%;
+  bottom: 0;
+  font-size: 12px;
+  color: #5F6A6A;
+}
+
+#gogift{border:0; outline:0; background-color:#f2f2f2; border-radius: 0.35em; padding: 0.75em 2.5em 0.75em 2.5em;text-decoration:none; color:#595959; font-weight:bold; margin-left:20px}
+
+#banner{
+  position:fixed;
+  margin-left:75%;    
+}

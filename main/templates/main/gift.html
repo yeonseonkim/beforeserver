@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        
+        h2 {text-align:center;}
+        .butcolor {border:0; outline:0; background-color: white;}
+        .butcolor:hover {background-color: rgb(200, 240, 176);}
+        img {width:180px;}
+        #main{border:0; outline:0; background-color:#f2f2f2; border-radius: 0.35em; padding: 0.75em 2.5em 0.75em 2.5em;text-decoration:none; color:#595959; font-weight:bold; margin-left:20px}
+        .block{text-align:center;}
+        #back{text-align:center;}
+    </style>
+</head>
+
+<body>
+    <h2>보상 교환하기</h2><br>
+    <div class="block">
+    <form action="" method="POST">
+        {% csrf_token %}
+        <button type="submit" class="butcolor"><img src="{% static 'img/frapu.jpg' %}" ><br>스타벅스 프라푸치노</button>
+        <button type="submit" class="butcolor"><img src="{% static 'img/carrot.jpg' %}" ><br>빌리엔젤 당근케이크</button>
+        <button type="submit" class="butcolor"><img src="{% static 'img/gs5000.jpg' %}" ><br>GS25 5천원권</button>
+        <button type="submit" class="butcolor"><img src="{% static 'img/happy5000.jpg' %}" ><br>해피머니 5천원 상품권</button>
+        <button type="submit" class="butcolor"><img src="{% static 'img/milk.jpg' %}" ><br>투썸 로얄밀크티쉐이크</button>
+
+        
+    </form>
+
+    <br><br>
+
+    <a href="{% url 'login' %}"><button id="main">메인페이지로 돌아가기</button></a></div>
+
+</body>

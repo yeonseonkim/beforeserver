@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>용기모아</title>
+    <!-- <link rel="stylesheet" type="text/css" href="extern.css"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/first.css' %}"/>
+
+</head>
+
+<body>
+    <header>
+        <a href="{% url 'login' %}"><input id="logo" type="image" src="{% static 'img/logo.png' %}" alt="로고 이미지" width="100"></a>
+        <h1><a href="{% url 'login' %}" id="hd">용기모아</a></h1>
+        
+    </header>
+    <br>
+    <nav>
+        <ul>
+            <li id="tab1"><a href="{% url 'first_intro' %}">소개</a></li>
+            <li id="tab2"><a href="{% url 'second_my' %}">마이페이지</a></li>
+            <li id="tab3"><a href="{% url 'third_pchange' %}">지역화폐로 전환</a></li>
+            <li id="tab4"><a href="{% url 'blog' %}">공지사항</a></li>
+
+        </ul>
+        
+    </nav>
+    <br>
+
+    
+    <a href="{% url 'honeytip' %}"><input id="banner" type="image" src="{% static 'img/banner.png' %}" width="100"></a>
+
+    
+    <section>
+        
+
+
+    	<div>
+    	<h3><span id="back">&nbsp사이트 취지&nbsp</span></h3>
+    	<input type="image" src="{% static 'img/intro.jpg' %}" alt="취지" width="600">
+    	</div><br>
+    	<br>
+
+    	<div>
+    	<h3><span id="back">&nbsp사용자 측 사이트 매뉴얼&nbsp</span></h3>
+    	<input type="image" src="{% static 'img/userman1.png' %}" alt="좋은 취지 이미지" width="600">
+    	</div><br>   
+        <br>
+        
+        <h3><span id="back">&nbsp매장 측 사이트 매뉴얼&nbsp</span></h3>
+        <input type="image" src="{% static 'img/storeman1.png' %}" alt="좋은 취지 이미지" width="600">
+        <br>
+    </section>
+
+    <footer>
+        <br><br>
+        Copyright © 용기모아 All Rights Reserved<br>
+        - 2021 졸업 프로젝트 김연선 최은녕 -
+    </footer>
+    
+</body>
+</html>

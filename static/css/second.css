@@ -1,0 +1,51 @@
+h1{text-align:center; color:#569A49;}
+#hd:link{text-decoration:none;color:#569A49; letter-spacing:2px }
+#hd:visited{text-decoration:none;color:#569A49; letter-spacing:2px}
+#hd:hover{text-decoration:none; color:#569A49; letter-spacing:2px}
+#hd:active{text-decoration:none; color:#569A49; letter-spacing:2px}
+
+#logo {padding: 10px; position: absolute; top: 2%; left: 30%; overflow: hidden}
+#content{width: 200px; float: right; padding: 0px;}
+
+li {float: left;}
+nav {position: absolute; top:20%; left: 25%;}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li a {
+    display: block;
+    color: #000000;
+    padding: 8px;
+    margin: 20;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+li a.current{
+    background-color: #145A32;
+    color: white;
+}
+
+li a:hover:not(.current) {
+    background-color: #145A32;
+    color: white;
+}
+
+section {position: absolute; top:28%; left: 25%;}
+
+h3 {
+    width: 400px;
+    /* background-color: #E9F7EF; */
+}
+
+.simple_table { width: 300px; border: none; border-collapse: separate; border-spacing: 2px;}
+.simple_table th { padding: 10px; width: 100px; border: none; border-left: 5px solid #FFD966; border-bottom: 1px solid #FFF3CD; background: #FFF9E5; font-weight: normal; text-align:center; text-shadow: 0 1px #FFF; vertical-align: middle;}
+.simple_table td { padding: 10px; border: none; border-bottom: 1px solid #FFF3CD; text-align: left; vertical-align: baseline;}
+
+#totalshow { color: #F2C439; font-size: 30px;}
+strong {color: #FB870D; }

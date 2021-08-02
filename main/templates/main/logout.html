@@ -1,0 +1,8 @@
+{% load static %}
+<input type="image" src="{% static 'img/logo.png' %}" alt="로고 이미지" width="100" id="logo">
+<link rel="stylesheet" type="text/css" href="{% static 'css/logout_extern.css' %}"/>
+
+<div id="ali"><p>성공적으로 로그아웃되었습니다!</p><br>
+<p>안녕히 가십시오.</p><br><br><br>
+
+<button id="but"><a href="{% url 'login' %}" id="butt">홈화면 가기</a></button></div>
