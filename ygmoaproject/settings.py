@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -139,3 +140,9 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 
 SESSION_EXPIRE_AT_BROWSER_CLOSE=True
+
+
+import dj_database_url 
+db_from_env = dj_database_url.config(conn_max_age=500) DATABASES['default'].update(db_from_env)
+
+
